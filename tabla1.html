@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TABLAS</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1">
+    <tr>
+      <td colspan="3">1</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4</td>
+      <td colspan="2" rowspan="2">5</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+  </table><br>
+
+  <form method="get">
+    <table>
+      <tr>
+        <td>
+          Nombre
+        </td>
+        <td>
+          <input type="text" name="nombre" required value="aldair">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apellido
+        </td>
+        <td>
+          <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="fuma" value="fumaterico" checked> Fuma
+          <input type="checkbox" name="bebe" value="borracho"> Bebe
+          <input type="checkbox" name="drogas" value="primo de vinchita" disabled> Consume drogas
+        </td>
+      </tr>
+      <tr>
+        <td>Sexo</td>
+        <td>
+          <input type="radio" name="sexo" value="1" checked> Hombre
+          <input type="radio" name="sexo" value="0"> Mujer
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          Carrera
+        </td>
+        <td>
+          <input type="radio" name="carrera" value="sistemas" checked> Ing. de Sistemas<br>
+          <input type="radio" name="carrera" value="medicina" disabled> Medicina<br>
+          <input type="radio" name="carrera" value="derecho"> Derecho<br>
+          <input type="radio" name="carrera" value="comercial"> Ing. Comercial
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Tel&eacute;fono:
+        </td>
+        <td>
+          <input type="tel" name="telefono">
+        </td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td>
+          <input type="email" name="email">
+        </td>
+      </tr>
+      <tr>
+        <td>Estado civil</td>
+        <td>
+          <select name="estado_civil">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+            <option value="divorciado">Divorciado</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">Materia</td>
+        <td>
+          <select name="materia" multiple>
+            <option value="matematica discreta">matematica discreta</option>
+            <option value="calculo 1">calculo 1</option>
+            <option value="estadistica 1">estadistica 1</option>
+            <option value="base de datos">base de datos</option>
+            <option value="investigacion operativa 1">investigacion operativa 1</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Carnet de Identidad</td>
+        <td>
+          <input type="number" value="ci">
+        </td>
+      </tr>
+      <tr>
+        <td>Descripci&oacute;n</td>
+        <td>
+          <textarea required name="descripcion" placeholder="mensaje"></textarea>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
